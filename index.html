@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Corte Huicho 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 80%;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        input {
+            width: 60px;
+            text-align: center;
+        }
+
+        tfoot {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="titulo"></h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Cantidad</th>
+                <th>Precio</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody id="tabla-body"></tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">TOTAL FINAL</td>
+                <td id="total-final">$0</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <script src="app.js"></script>
+</body>
+</html>
